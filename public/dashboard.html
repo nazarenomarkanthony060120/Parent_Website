@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="enrollment.css">
+    <link rel="stylesheet" href="subject.css">
+    <link rel="stylesheet" href="grade.css">
+    <link rel="stylesheet" href="attendance.css">
+    <link rel="stylesheet" href="logout.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <main>
+            <div class="logout-parent">
+                <span>Logout Parent</span>
+            </div>
+            <div class="content-title">
+                <span>Dashboard</span>
+            </div>
+            <div class="item dashboard">
+                <div class="posted-section">
+                    <div class="post-teacher">
+                        <div class="title">
+                            <span>Teacher Announcement</span>
+                        </div>
+                        <div class="announcement">
+                            
+                        </div>
+                    </div>
+                    <div class="post-admin">
+                        <div class="title">
+                            <span>School Announcement</span>
+                        </div>
+                        <div class="events">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item enrollment" style="display: none;">
+                <div class="enrollment-closed" style="display: none;">
+                    <div>
+                        <div class="enrollment-closed-container">
+                            <div class="logo-container">
+                                <img src="school_logo.png" alt="logo">
+                                <span>Blessed Trinity Elementary School</span>
+                            </div>
+                            <div class="close-text">
+                                <span id="sy"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="enrollment-open" style="display: none;">
+                    <div class="enrollment-container">
+                        <div class="logo-enrollment-text-container">
+                            <div class="logo">
+                                <img src="school_logo.png" alt="logo">
+                            </div>
+                            <div class="enrollment-text">
+                                <b><span>ENROLLMENT FORM</span></b>
+                                <span id="sy"></span>
+                            </div>
+                        </div>
+                        <div class="fill-up-form">
+                            <div class="date-enrolled-age-on-june-container">
+                                <div class="age-on-june-text-input">
+                                    <label for="age-on-june">Age on June:</label>
+                                    <input type="text" placeholder="Age on June" id="age-on-june" name="age-on-june" required>
+                                </div>
+                            </div>
+                            <div class="name-container">
+                                <span>Name:</span>
+                                <div class="surname-text-input">
+                                    <input type="text" placeholder="Surname" id="surname" name="surname" required>
+                                    <label for="surname">(Surname)</label>
+                                </div>
+                                <div class="first-name-text-input">
+                                    <input type="text" placeholder="First Name" id="first-name" name="first-name" required>
+                                    <label for="first-name">(First Name)</label>
+                                </div>
+                                <div class="middle-name-text-input">
+                                    <input type="text" placeholder="Middle Name" id="middle-name" name="middle-name" required>
+                                    <label for="middle-name">(Middle Name)</label>
+                                </div>
+                            </div>
+                            <div class="date-of-birth-place-of-birth-age-sex-container">
+                                <div class="date-of-birth-text-input">
+                                    <label for="date-of-birth">Date of Birth:</label>
+                                    <input type="text" placeholder="Date of Birth" id="date-of-birth" name="date-of-birth" required>
+                                </div>
+                                <div class="place-of-birth-text-input">
+                                    <label for="place-of-birth">Place of Birth:</label>
+                                    <input type="text" placeholder="Place of Birth" id="place-of-birth" name="place-of-birth" required>
+                                </div>
+                                <div class="age-text-input">
+                                    <label for="age">Age:</label>
+                                    <input type="text" placeholder="Age" id="age" name="age" required>
+                                </div>
+                                <div class="sex-text-input">
+                                    <label for="sex">Sex:</label>
+                                    <input type="text" placeholder="Sex" id="sex" name="sex" required>
+                                </div>
+                            </div>
+                            <div class="home-address-contact-no-religion-container">
+                                <div class="home-address-text-input">
+                                    <label for="home-address">Home Address:</label>
+                                    <input type="text" placeholder="Home Address" id="home-address" name="home-address" required>
+                                </div>
+                                <div class="contact-no-text-input">
+                                    <label for="contact-no">Contact No:</label>
+                                    <input type="text" placeholder="Contact No" id="contact-no" name="contact-no" required>
+                                </div>
+                                <div class="religion-text-input">
+                                    <label for="religion">Religion:</label>
+                                    <input type="text" placeholder="Religion" id="religion" name="religion" required>
+                                </div>
+                            </div>
+                            <div class="school-last-attended-address-container">
+                                <div class="school-last-attended-text-input">
+                                    <label for="school-last-attended">School Last Attended:</label>
+                                    <input type="text" placeholder="School Last Attended" id="school-last-attended" name="school-last-attended" required>
+                                </div>
+                                <div class="address-text-input">
+                                    <label for="address">Adress:</label>
+                                    <input type="text" placeholder="Adress" id="address" name="address" required>
+                                </div>
+                            </div>
+                            <div class="grade-level-in-the-previous-school-honor-received-container">
+                                <div class="grade-level-in-the-previous-school-text-input">
+                                    <label for="grade-level-in-the-previous-school">Grade Level in the previous school:</label>
+                                    <input type="text" placeholder="Grade Level" id="grade-level-in-the-previous-school" name="grade-level-in-the-previous-school" required>
+                                </div>
+                                <div class="honor-received-text-input">
+                                    <label for="honor-received">Honor/s Received (if any):</label>
+                                    <input type="text" placeholder="Honor/s Received (if any)" id="honor-received" name="honor-received" required>
+                                </div>
+                            </div>
+                            <div class="name-of-father-occupation-contact-no-container">
+                                <div class="name-of-father-text-input">
+                                    <label for="name-of-father">Name of Father:</label>
+                                    <input type="text" placeholder="Name of Father" id="name-of-father" name="name-of-father" required>
+                                </div>
+                                <div class="occupation-text-input">
+                                    <label for="occupation">Occupation:</label>
+                                    <input type="text" placeholder="Occupation" id="occupation" name="occupation" required>
+                                </div>
+                                <div class="contact-no-text-input">
+                                    <label for="contact-no">Contact No:</label>
+                                    <input type="text" placeholder="Contact No" id="contact-no" name="contact-no" required>
+                                </div>
+                            </div>
+                            <div class="name-of-mother-occupation-contact-no-container">
+                                <div class="name-of-mother-text-input">
+                                    <label for="name-of-mother">Name of Mother:</label>
+                                    <input type="text" placeholder="Name of Mother" id="name-of-mother" name="name-of-mother" required>
+                                </div>
+                                <div class="occupation-text-input">
+                                    <label for="occupation">Occupation:</label>
+                                    <input type="text" placeholder="Occupation" id="occupation" name="occupation" required>
+                                </div>
+                                <div class="contact-no-text-input">
+                                    <label for="contact-no">Contact No:</label>
+                                    <input type="text" placeholder="Contact No" id="contact-no" name="contact-no" required>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <span>Name of Guardian & Contact No. if not living with the parents:</span>
+                            </div>
+                            <div class="name-relationship-contact-nos-tel-cell-container">
+                                <div class="name-text-input">
+                                    <label for="name">Name:</label>
+                                    <input type="text" placeholder="Name" id="name" name="name" required>
+                                </div>
+                                <div class="relationship-text-input">
+                                    <label for="relationship">Relationship:</label>
+                                    <input type="text" placeholder="Relationship" id="relationship" name="relationship" required>
+                                </div>
+                                <div class="contact-no-text-input">
+                                    <label for="contact-no-tel">Contact Nos.: Tel:</label>
+                                    <input type="text" placeholder="Tel" id="contact-no-tel" name="contact-no-tel" required>
+                                </div>
+                                <div class="cell-no-text-input">
+                                    <label for="cell-no">Cell #:</label>
+                                    <input type="text" placeholder="Cell #" id="cell-no" name="cell-no" required>
+                                </div>
+                            </div>
+                            <div class="grade-container">
+                                <div class="grade-text-input">
+                                    <label for="grade">Grade:</label>
+                                    <input type="text" placeholder="Grade" id="grade" name="grade" required>
+                                </div>
+                                <div class="form-check-pupil">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="New Pupil" required> 
+                                        <label class="form-check-label" for="flexRadioDefault1">New Pupil</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="Old Pupil" required> 
+                                        <label class="form-check-label" for="flexRadioDefault2">Old Pupil</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="applying-text">
+                                <span id="applying-text"></span>
+                            </div>
+                            <div class="enroll-btn">
+                                <button id="apply-enrollment" class="btn btn-primary">Apply Enrollment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="waiting-for-confirmation" style="display: none;">
+                    <div>
+                        <div class="waiting-for-confirmation-container">
+                            <div class="logo-container">
+                                <img src="school_logo.png" alt="logo">
+                                <span>Blessed Trinity Elementary School</span>
+                            </div>
+                            <div class="close-text">
+                                <span class="sy">You already applied. Please wait for the confirmation!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>       
+                <div class="you-are-now-enrolled" style="display: none;">
+                    <div>
+                        <div class="you-are-now-enrolled-container">
+                            <div class="logo-container">
+                                <img src="school_logo.png" alt="logo">
+                                <span>Blessed Trinity Elementary School</span>
+                            </div>
+                            <div class="close-text">
+                                <span class="sy">You are now Enrolled! Please Check your subject in Subject Navigation Bar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="item subject" style="display: none;">
+                <div class="subject-container" style="display: block;">
+                    <div class="span-student-name">
+                        <span>Student:</span>
+                        <b><span class="student-name"></span></b>
+                    </div>
+                    <div class="subject-table-container">
+                        <table class="table table-hover table-striped text-center">
+                            <thead>
+                                <th>No.</th>
+                                <th>Subject</th>
+                                <th>Teacher</th>
+                                <th>Time</th>
+                            </thead>
+                            <tbody class="subject-tbody"></tbody>
+                        </table>
+                    </div>
+                </div> 
+                <div class="you-are-not-yet-enrolled" style="display: none">
+                    <div>
+                        <div class="you-are-not-yet-enrolled-container">
+                            <div class="logo-container">
+                                <img src="school_logo.png" alt="logo">
+                                <span>Blessed Trinity Elementary School</span>
+                            </div>
+                            <div class="close-text">
+                                <span class="sy">You are not yet Enrolled</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div class="item grade" style="display: none;">
+                <div class="grade-container" style="display: block;">
+                    <div class="span-student-name">
+                        <span>Student:</span>
+                        <b><span class="student-name">Jane M. Ludivese</span></b>
+                    </div>
+                    <div class="table-container text-center">
+                        <table class="table table-hover table-striped">
+                            <thead>
+                                <th>No.</th>
+                                <th>Subject</th>
+                                <th>1st</th>
+                                <th>2nd</th>
+                                <th>3rd</th>
+                                <th>4th</th>
+                            </thead>
+                            <tbody class="student-grade-tbody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="you-are-not-yet-enrolled" style="display: none;">
+                    <div>
+                        <div class="you-are-not-yet-enrolled-container">
+                            <div class="logo-container">
+                                <img src="school_logo.png" alt="logo">
+                                <span>Blessed Trinity Elementary School</span>
+                            </div>
+                            <div class="close-text">
+                                <span class="sy">You are not yet Enrolled</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <div class="item attendance" style="display: none;">
+                <div class="attendance-container" style="display: block">
+                    <div class="span-search-container">
+                        <div class="span-student-name">
+                            <span>Student:</span>
+                            <b><span class="student-name"></span></b>
+                        </div>
+                        <div class="search_div">
+                            <label for="search-date">Search Date: </label>
+                            <input type="text" id="search-date" name="search-date" placeholder="MM/DD/YYYY">
+                        </div>
+                    </div>
+                    <div class="table-container text-center">
+                        <table class="table table-hover table-striped">
+                            <thead>
+                                <th>No.</th>
+                                <th>Name</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                            </thead>
+                            <tbody class="attendance-tbody"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="you-are-not-yet-enrolled" style="display: none;">
+                    <div>
+                        <div class="you-are-not-yet-enrolled-container">
+                            <div class="logo-container">
+                                <img src="school_logo.png" alt="logo">
+                                <span>Blessed Trinity Elementary School</span>
+                            </div>
+                            <div class="close-text">
+                                <span class="sy">You are not yet Enrolled</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </main>
+        <div class="left-navbar">
+            <div class="logo-title-container">
+                <span class="system-title my-3">Blessed Trinity System</span>
+                <img src="school_logo.png" alt="logo">
+                <span class="my-2" style="font-family: 'Ubuntu', sans-serif;" id="parent-name">Hello, Parent</span>
+            </div>
+            <nav class="navbar-containers">
+                <li data-li="dashboard">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li data-li="enrollment">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <a href="#">Enrollment</a>
+                </li>
+                <li data-li="subject">
+                    <i class="fa-solid fa-book-open"></i>
+                    <a href="#">Subject</a>
+                </li>
+                <li data-li="grade">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <a href="#">Grade</a>
+                </li>
+                <li data-li="attendance">
+                    <i class="fa-solid fa-file-medical"></i>
+                    <a href="#">Attendance</a>
+                </li>
+            </nav>
+        </div>
+        
+    </div>
+    
+    <script src="navbar.js"></script>
+    <script type="module" src="dashboard.js"></script>
+    <script type="module" src="enrollment.js"></script>
+    <script type="module" src="subject.js"></script>
+    <script type="module" src="grade.js"></script>
+    <script type="module" src="attendance.js"></script>
+    <script type="module" src="logout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "default": "btes-system",
+    "btes-parent": "btes-system"
+  },
+  "targets": {
+    "btes-system": {
+      "hosting": {
+        "ef": [
+          "btes-parent"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

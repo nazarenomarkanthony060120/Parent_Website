@@ -1,0 +1,456 @@
+.enrollment {
+    height: 100%;
+    width: 100%;
+}
+
+
+.enrollment-closed {
+    height: 100%;
+    background-color: #d6d6d6;
+}
+
+.enrollment-closed > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.enrollment-closed .enrollment-closed-container {
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgb(188, 188, 188);
+    box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px #fff;
+    margin-top: -70px;
+
+}
+
+
+
+.enrollment-closed .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enrollment-closed .logo-container img {
+    width: 60px;
+    margin: 20px;
+    border-radius: 100%;
+    box-shadow: 7px 7px 10px #a3a3a3, -7px -7px 10px #fff;
+}
+
+.enrollment-closed .close-text {
+    text-align: center;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 1061px) {
+    .enrollment-closed .enrollment-container {
+        height: 300px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #d6d6d6;
+        border-radius: 10px;
+        box-sizing: border-box;
+        box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px #fff;
+    }
+
+    .enrollment-closed .enrollment-container div > span{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .enrollment-closed .enrollment-closed-container {
+        margin-top: -40px;
+        width: 300px;
+        height: 150px;
+        padding: 5px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        border: 1px solid rgb(188, 188, 188);
+        box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px #fff;
+    }
+
+    .enrollment-closed .logo-container {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+    }
+    
+    .enrollment-closed .logo-container img {
+        width: 50px;
+        margin: 20px;
+        border-radius: 100%;
+        box-shadow: 7px 7px 10px #a3a3a3, -7px -7px 10px #fff;
+    }
+    
+    .enrollment-closed .close-text {
+        text-align: center;
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    .enrollment-closed .enrollment-container .logo-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .enrollment-closed .enrollment-closed-container {
+        width: 250px;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #d6d6d6;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+    
+    .enrollment-closed .logo-container img {
+        width: 50px;
+        border-radius: 100%;
+        box-shadow: 7px 7px 10px #a3a3a3, -7px -7px 10px #fff;
+    }
+    
+    .enrollment-closed .logo-container span {
+        font-size: 12px;
+    }
+    
+    .enrollment-closed .close-text {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .enrollment-closed .close-text span {
+        font-size: 12px;
+    }
+}
+
+.enrollment-open {
+    height: 100%;
+}
+
+.enrollment-open .enrollment-container {
+    height: 100%;
+    width: 100%;
+    padding: 80px 110px 0 110px;
+}
+
+.enrollment-open .fill-up-form {
+    width: 100%;
+    padding: 50px;
+}
+
+.enrollment-open .logo-enrollment-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enrollment-open .enrollment-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.enrollment-open .enrollment-container img {
+    width: 80px;
+    border-radius: 100%;
+    margin-left: -200px;
+}
+
+input {
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+input:focus {
+    outline: 2px solid rgb(68, 68, 255);
+    border: none;
+}
+
+.enrollment-open .fill-up-form .date-enrolled-age-on-june-container {
+    display: flex;
+    justify-content: space-between;   
+}
+
+.enrollment-open .fill-up-form .name-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.enrollment-open .fill-up-form .name-container .surname-text-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enrollment-open .fill-up-form .name-container .surname-text-input input {
+    width: 300px;
+}
+
+.enrollment-open .fill-up-form .name-container .first-name-text-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enrollment-open .fill-up-form .name-container .first-name-text-input input {
+    width: 300px;
+}
+
+.enrollment-open .fill-up-form .name-container .middle-name-text-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enrollment-open .fill-up-form .name-container .middle-name-text-input input {
+    width: 300px;
+}
+
+.enrollment-open .fill-up-form .date-of-birth-place-of-birth-age-sex-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.enrollment-open .fill-up-form .date-of-birth-place-of-birth-age-sex-container .date-of-birth-text-input input{
+    width: 200px;
+}
+
+.enrollment-open .fill-up-form .date-of-birth-place-of-birth-age-sex-container .place-of-birth-text-input input{
+    width: 300px;
+}
+
+.enrollment-open .fill-up-form .date-of-birth-place-of-birth-age-sex-container .age-text-input input{
+    width: 80px;
+}
+
+.enrollment-open .fill-up-form .date-of-birth-place-of-birth-age-sex-container .sex-text-input input{
+    width: 80px;
+}
+
+.enrollment-open .fill-up-form .home-address-contact-no-religion-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.enrollment-open .fill-up-form .home-address-contact-no-religion-container .home-address-text-input input {
+    width: 300px;
+}
+
+.enrollment-open .fill-up-form .school-last-attended-address-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.enrollment-open .fill-up-form .school-last-attended-address-container .school-last-attended-text-input input {
+    width: 360px;
+}
+
+.enrollment-open .fill-up-form .school-last-attended-address-container .address-text-input input {
+    width: 360px;
+}
+
+
+.enrollment-open .fill-up-form .grade-level-in-the-previous-school-honor-received-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.enrollment-open .fill-up-form .grade-level-in-the-previous-school-honor-received-container .grade-level-in-the-previous-school-text-input input {
+    width: 240px;
+}
+
+.enrollment-open .fill-up-form .grade-level-in-the-previous-school-honor-received-container .honor-received-text-input input {
+    width: 280px;
+}
+
+.enrollment-open .fill-up-form .name-of-father-occupation-contact-no-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.enrollment-open .fill-up-form .name-of-father-occupation-contact-no-container .name-of-father-text-input input {
+    width: 270px;
+}
+
+.enrollment-open .fill-up-form .name-of-mother-occupation-contact-no-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.enrollment-open .fill-up-form .name-of-mother-occupation-contact-no-container .name-of-mother-text-input input {
+    width: 270px;
+}
+
+.enrollment-open .fill-up-form .text {
+    margin-top: 30px;
+}
+
+.enrollment-open .fill-up-form .name-relationship-contact-nos-tel-cell-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.enrollment-open .fill-up-form .name-relationship-contact-nos-tel-cell-container .name-text-input input {
+    width: 250px;
+}
+
+.enrollment-open .fill-up-form .name-relationship-contact-nos-tel-cell-container .relationship-text-input input {
+    width: 150px;
+}
+
+.enrollment-open .fill-up-form .name-relationship-contact-nos-tel-cell-container .contact-no-text-input input {
+    width: 120px;
+}
+
+.enrollment-open .fill-up-form .name-relationship-contact-nos-tel-cell-container .cell-no-text-input input {
+    width: 120px;
+}
+
+.enrollment-open .fill-up-form .grade-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 5px 0;
+}
+
+.enrollment-open .fill-up-form .grade-container .form-check-pupil {
+    display: flex;
+    flex-direction: row;
+}
+
+.enrollment-open .fill-up-form .grade-container .form-check-pupil > div {
+    margin: 10px 40px;
+}
+
+.enrollment-open .fill-up-form .enroll-close-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.enrollment-open .fill-up-form .applying-text {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    color: #0f0;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.enrollment-open .fill-up-form .enroll-btn {
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.waiting-for-confirmation {
+    height: 100%;
+    background-color: #d6d6d6;
+}
+
+.waiting-for-confirmation > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.waiting-for-confirmation .waiting-for-confirmation-container {
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: -70px;
+    box-sizing: border-box;
+    border: 1px solid rgb(188, 188, 188);
+    box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px #fff;
+}
+
+.waiting-for-confirmation .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.waiting-for-confirmation .logo-container img {
+    width: 60px;
+    margin: 20px;
+    border-radius: 100%;
+    box-shadow: 7px 7px 10px #a3a3a3, -7px -7px 10px #fff;
+}
+
+.waiting-for-confirmation .close-text {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.you-are-now-enrolled {
+    height: 100%;
+    background-color: #d6d6d6;
+}
+
+.you-are-now-enrolled > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.you-are-now-enrolled .you-are-now-enrolled-container {
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: -70px;
+    box-sizing: border-box;
+    border: 1px solid rgb(188, 188, 188);
+    box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px #fff;
+}
+
+
+
+.you-are-now-enrolled .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.you-are-now-enrolled .logo-container img {
+    width: 60px;
+    margin: 20px;
+    border-radius: 100%;
+    box-shadow: 7px 7px 10px #a3a3a3, -7px -7px 10px #fff;
+}
+
+.you-are-now-enrolled .close-text {
+    text-align: center;
+    font-size: 18px;
+}

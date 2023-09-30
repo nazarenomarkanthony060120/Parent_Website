@@ -1,0 +1,54 @@
+.subject {
+    width: 100%;
+    height: 100%;
+}
+
+.subject .subject-container .span-student-name{
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px 10px 0px 0px;
+    padding: 15px;
+}
+
+.subject .you-are-not-yet-enrolled {
+    height: 100%;
+    background-color: #d6d6d6;
+}
+
+.subject .you-are-not-yet-enrolled > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.subject .you-are-not-yet-enrolled .you-are-not-yet-enrolled-container {
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: -70px;
+    box-sizing: border-box;
+    border: 1px solid rgb(188, 188, 188);
+    box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px #fff;
+}
+
+
+
+.subject .you-are-not-yet-enrolled .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subject .you-are-not-yet-enrolled .logo-container img {
+    width: 60px;
+    margin: 20px;
+    border-radius: 100%;
+    box-shadow: 7px 7px 10px #a3a3a3, -7px -7px 10px #fff;
+}
+
+.subject .you-are-not-yet-enrolled .close-text {
+    text-align: center;
+    font-size: 18px;
+}

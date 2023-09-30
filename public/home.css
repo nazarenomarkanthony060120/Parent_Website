@@ -1,0 +1,116 @@
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.posted-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.posted-section .announcement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 600px;
+}
+
+.posted-section .events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 600px;
+
+}
+
+.posted-section > div {
+    flex: 1;
+    text-align: center;
+}
+
+.post-teacher > .title, .post-admin > .title {
+    padding: 10px 0;
+    background-color: rgb(194, 194, 194);;
+}
+
+.post-teacher > span, .post-admin > span {
+    line-height: 40px;
+    font-weight: bold;
+    color: rgb(65, 65, 65);
+}
+
+.announcement_container {
+    width: 90%;
+    margin: 5px 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid   black;
+    color: #fff;
+    background-color: rgb(50, 130, 251);
+}
+
+.div_announce_content {
+    text-align: start;
+    padding: 10px 0;
+}
+
+.div_name_time_date_container {
+    display: flex;
+    width: 100%;
+}
+
+.div_name_status {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+}
+
+.div_time_date {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: end;
+}
+
+.div_mentioned {
+    width: 100%;
+    text-align: end;
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .posted-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .posted-section > div {
+        margin: 10px 0;
+    }
+
+    .posted-section .announcement {
+        height: 100%;
+    }
+
+    .posted-section .events {
+        height: 100%;
+    }
+}
+/* main .post-teacher {
+    flex: 1;
+}
+
+main .post-admin {
+    flex: 1;
+} */
